@@ -26,3 +26,5 @@ if (espaco == True):
     print('O valor contém apenas espaços')
 else:
     print('FALSO, o valor não contém apenas espaços')
+
+print('\n LEMBRE-SE!! \n\n O python é uma linguagem que apresenta 6 tipos: \n int(inteiros), \n float(ponto flutuante), \n str(string), \n bool(booleano), \n list(lista[]), \n dict(dicionário{chave:valor}) \n')

@@ -7,6 +7,7 @@ class Pessoa:
         self.nome = nome
         self.idade = idade
         self.altura = altura
+
     def cumprimentar(self, nome_da_pessoa):
         return print(f"Olá {nome_da_pessoa}, meu nome é {self.nome}, tenho {self.idade} anos e {self.altura} metros")
 
@@ -20,3 +21,16 @@ print(pessoa1.altura)
 pessoa1.cumprimentar("Roger")
 
 #Herança de Classes
+class Aluno(Pessoa):
+    def __init__ (self, nome, idade, altura, matricula):
+        super(). __init__ (nome, idade, altura)
+        self.matricula = matricula
+
+    def estudar(self):
+        return print(f"{self.nome}, de matrícula {self.matricula}, está estudando")
+
+aluno1 = Aluno("Ricardo", 18, 1.70, 24008133)
+print(aluno1.nome)
+print(aluno1.matricula)
+
+aluno1.estudar()

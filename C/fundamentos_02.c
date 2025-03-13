@@ -37,7 +37,47 @@ int main()
     strncat(complete, str, 8);
     printf("%s\n", complete);
 
-    // Loops "for" e "while"
+    // Estruturas de repetição: "for" e "while"
+    // Loop "for" simples
+    int i;
+    for (i = 1; i < 11; i++)
+    {
+        printf("%d\n", i);
+    }
+
+    // Loop "for" na criação de um fatorial
+    int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int fatorial = 1;
+
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%i\n", array[i]);
+        fatorial *= array[i];
+    }
+    printf("Fatorial: %d\n", fatorial);
+
+    // Loop "while" simples (exxecuta o código enquanto a condição for verdadeira)
+    int j = 0;
+    while (j < 10)
+    {
+        j++;
+    }
+
+    // Loop "while" com "break" & "continue"
+    int n = 0;
+    while (1)
+    {
+        n++;
+        if (n % 2 == 1)
+        {
+            printf("Valor ímpar: %i", n);
+            continue;
+        }
+        if (n == 10)
+        {
+            break;
+        }
+    }
 
     // Ponteiros
     // ponteiros são elementos fundamentais que permitem manipular diretamente a memória do computador. Um ponteiro é uma variável que armazena o endereço de outra variável.
@@ -60,7 +100,7 @@ int main()
 
     // Ponteiro é frequentemente usado para passar parâmetros por referência para funções
     // EXEMPLO DE UM PROGRAMA COMPLETO ABAIXO:
-    
+
     // void duplicaValor(int *x)
     // {
     //     *x *= 2;
@@ -72,6 +112,6 @@ int main()
     //     printf("O dobro de 5 é: %d\n", numero);
     //     return 0;
     // }
-    
+
     return 0;
 }

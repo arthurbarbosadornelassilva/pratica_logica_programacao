@@ -30,14 +30,14 @@ void main () {
     // Referência indireta, ponteiro duplo ou ponteiro para ponteiro
     int a = 231 ;
     int *pd ; // ponteiro direto
-    int **pi ; // ponteiro indireto, equivale a int *(*p)
+    int **pi ; // ponteiro indireto, equivale a int *(*pd)
     pd = &a ; // pd recebe o endereço de um int
     pi = &pd ; // pi recebe o endereço de um ponteiro para int
     printf ("a está em %p e vale %d\n", &a, a);
     printf ("pd está em %p e vale %p\n", &pd, pd);
     printf ("pi está em %p e vale %p\n", &pi, pi);
-    printf ("*pd vale %d\n", *pd);
-    printf ("*pi vale %p\n", *pi);
-    printf ("**pi vale %p\n", **pi);
+    printf ("conteudo apontado por pd %d\n", *pd);
+    printf ("conteudo que pi aponta %d\n", **pi);
+    // printf ("*pi vale %p\n", *pi);
 
 }

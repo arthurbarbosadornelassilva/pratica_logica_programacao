@@ -37,7 +37,7 @@ void main () {
     printf ("pd está em %p e vale %p\n", &pd, pd);
     printf ("pi está em %p e vale %p\n", &pi, pi);
     printf ("conteudo apontado por pd %d\n", *pd);
-    printf ("conteudo que pi aponta %d\n", **pi);
+    printf ("conteudo que pi aponta %d\n", **pi); //caso seja utilizado %p, o valor a ser exibido será referente ao hexadecimal do valor armazenado em *pi
     // printf ("*pi vale %p\n", *pi);
 
 }

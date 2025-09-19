@@ -67,7 +67,7 @@ double calculaMulti(double a, double b, historico h) {
 double calculaDiv(double a, double b, historico h) {
   double resultado = divisao(a, b);
   h.adicionar("$a / $b", resultado);
-  var i = h.listar().last;
+  var i = h.listar().last; 
 
   print('\n Resultado da operação: $resultado / Id da operação: $i');
   return resultado;

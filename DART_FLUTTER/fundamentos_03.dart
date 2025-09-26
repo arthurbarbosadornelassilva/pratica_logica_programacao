@@ -76,6 +76,9 @@ void main() {
     case(4):
       print(c.listarContato());
 
+    case(5):
+      break;
+
     default:
         print('Nenhuma opção de operação foi selecionada');
   }

@@ -124,6 +124,8 @@ void main() {
           double b = double.parse(bString!);
 
         calculaDiv(a, b, h);
+      case(5):
+        infereOperacao == 5;
       
       default:
         print('Nenhuma opção de operação foi selecionada');
